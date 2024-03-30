@@ -4,7 +4,6 @@ application:
 
 server:
   timezone: America/Sao_Paulo
-
 infra:
   mongo:
     driver: mongodb+srv://
