@@ -1,30 +1,30 @@
 application:
-  name: ${db_version}
-  version: ${db_version}
+  name: ${MS_NAME}
+  version: ${MS_VERSION}
 
 server:
-  timezone: ${db_timezone}
+  timezone: ${TZ}
 infra:
   mongo:
-    driver: ${db_driver}
+    driver: ${MONGO_DRIVER}
     database:
-      cluster: ${db_cluster}
-      user: ${db_user}
-      pass: ${db_pass}
+      cluster: ${MONGO_CLUSTER}
+      user: ${MONGO_USER}
+      pass: ${MONGO_PASS}
       names:
-        - ${db_name1}
-        - ${db_name2}
+        - ${MONGO_DB_NAME_NON}
+        - ${MONGO_DB_NAME}
 
 domain:
   apicpixel:
     ms-gateway:
-      uri: ${db_uri1}
-      port: ${db_port1}
+      uri: ${MS_GATEWAY_URI}
+      port: ${MS_GATEWAY_PORT}
     ms-service-base:
-      uri: ${db_uri2}
-      port: ${db_port2}
+      uri: ${MS_BASE_SERVICE_URI}
+      port: ${MS_BASE_SERVICE_PORT}
   valorant:
-    url: ${db_url}
+    url: ${VALORANT_URI}
     relative-paths:
       - agents
       - buddies

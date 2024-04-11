@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 import pymongo
 
+
 class PymongoService:
     instance = None
 
     def __init__(self) -> None:
-        self.client = pymongo.MongoClient('mongodb+srv://herdeiros_aurora:herdeiros_aurora_001@cluster0.otugy2g.mongodb.net/')
-
+        self.client = pymongo.MongoClient(
+            'mongodb+srv://herdeiros_aurora:herdeiros_aurora_001@cluster0.otugy2g.mongodb.net/')
 
     def get_db(self, db_name: str):
         """
@@ -17,7 +18,7 @@ class PymongoService:
             db_name (str): name of database
         """
         return self.client[db_name]
-    
+
     def get_mongo_client(self):
         """
         Responsible to get mongo client after connect on database
