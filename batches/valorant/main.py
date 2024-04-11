@@ -9,7 +9,7 @@ sys.path.append(os.path.abspath(os.getcwd()))
 from services.pymongo_service import PymongoService
 from domain.valorant.model.agents_model import AgentsModel
 from services.log.log_service import LogService
-from services.env.build_env_service import BuildEnvService
+from services.environment.build_env_service import BuildEnvService
 
 # storage path root and some constants variables
 AGENTS = 'agents'

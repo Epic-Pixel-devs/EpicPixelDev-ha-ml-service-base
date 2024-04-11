@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, jsonify
 
-from services.env.build_env_service import BuildEnvService
+from services.environment.build_env_service import BuildEnvService
 from services.log.log_service import LogService
 from services.scheduller_service import SchedulerService
 
