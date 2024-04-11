@@ -1,0 +1,48 @@
+application:
+  name: ms-ml-service
+  version: 0.0.4
+
+
+server:
+  timezone: America/Sao_Paulo
+infra:
+  mongo:
+    driver: mongodb+srv://
+    database:
+      cluster: cluster0.otugy2g.mongodb.net/
+      user: herdeiros_aurora
+      pass: herdeiros_aurora_001
+      names:
+        - ml_service_non_handler_db
+        - dev_ml_service_db
+
+domain:
+  apicpixel:
+    ms-gateway:
+      uri: http://201.95.98.141
+      port: 8081
+    ms-service-base:
+      uri: http://201.95.98.141
+      port: 8082
+  valorant:
+    url: https://valorant-api.com/v1
+    relative-paths:
+      - agents
+      - buddies
+      - bundles
+      - ceremonies
+      - competitivetiers
+      - contenttiers
+      - contracts
+      - currencies
+      - events
+      - gamemodes
+      - gear
+      - levelborders
+      - maps
+      - playercards
+      - playertitles
+      - seasons
+      - sprays
+      - themes
+      - weapons

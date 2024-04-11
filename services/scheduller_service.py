@@ -4,6 +4,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 from batches.valorant.main import initialize
 
+
 class SchedulerService(BackgroundScheduler):
     def __init__(self):
         super().__init__()
@@ -11,4 +12,3 @@ class SchedulerService(BackgroundScheduler):
 
         self.reschedule_job('batch_valorant', trigger='cron', year='*', month='*', day='*',
                             week='*', day_of_week='*', hour=0, minute=30, second=0)
- 
