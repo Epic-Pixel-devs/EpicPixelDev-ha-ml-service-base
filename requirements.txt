@@ -55,3 +55,6 @@ tzlocal==5.1
 wcwidth==0.2.13
 Werkzeug==2.2.3
 zipp==3.15.0
+
+testcase~=0.1.0
+python-dotenv~=0.21.1

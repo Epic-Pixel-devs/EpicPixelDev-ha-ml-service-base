@@ -1,30 +1,30 @@
 application:
-  name: ms-ml-service
-  version: 0.0.4
+  name: ${db_version}
+  version: ${db_version}
 
 server:
-  timezone: America/Sao_Paulo
+  timezone: ${db_timezone}
 infra:
   mongo:
-    driver: mongodb+srv://
+    driver: ${db_driver}
     database:
-      cluster: cluster0.otugy2g.mongodb.net/
-      user: herdeiros_aurora
-      pass: herdeiros_aurora_001
+      cluster: ${db_cluster}
+      user: ${db_user}
+      pass: ${db_pass}
       names:
-        - ml_service_non_handler_db
-        - dev_ml_service_db
+        - ${db_name1}
+        - ${db_name2}
 
 domain:
   apicpixel:
     ms-gateway:
-      uri: http://201.95.98.141
-      port: 8081
+      uri: ${db_uri1}
+      port: ${db_port1}
     ms-service-base:
-      uri: http://201.95.98.141
-      port: 8082
+      uri: ${db_uri2}
+      port: ${db_port2}
   valorant:
-    url: https://valorant-api.com/v1
+    url: ${db_url}
     relative-paths:
       - agents
       - buddies
