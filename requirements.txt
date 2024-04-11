@@ -11,7 +11,6 @@ exceptiongroup==1.2.0
 Flask==2.2.5
 importlib-metadata==6.7.0
 iniconfig==2.0.0
-ipykernel==6.16.2
 ipython==7.34.0
 itsdangerous==2.1.2
 jedi==0.19.1
@@ -39,13 +38,16 @@ PyJWT==2.8.0
 pymongo==4.6.2
 pytest==7.4.4
 python-dateutil==2.9.0.post0
+python-dotenv==0.21.1
 pytz==2024.1
+pywin32==306
 PyYAML==6.0.1
 pyzmq==25.1.2
 schedule==1.2.1
 sentinels==1.0.0
 setuptools==40.8.0
 six==1.16.0
+testcase==0.1.0
 tomli==2.0.1
 tornado==6.2
 traitlets==5.9.0
@@ -55,6 +57,3 @@ tzlocal==5.1
 wcwidth==0.2.13
 Werkzeug==2.2.3
 zipp==3.15.0
-
-testcase~=0.1.0
-python-dotenv~=0.21.1

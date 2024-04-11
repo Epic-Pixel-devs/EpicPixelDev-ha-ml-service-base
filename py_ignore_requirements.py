@@ -15,5 +15,5 @@ if __name__ == '__main__':
 
     with open('requirements.txt', 'w') as file:
         file.writelines(packages, )
-    
+
     file.close()
